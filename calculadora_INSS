@@ -1,0 +1,23 @@
+salario_base = float(input("Digite seu salário: "))
+if salario_base <= 1302:
+    salario = (salario_base * 7.5 / 100)
+elif salario_base <= 2571:
+    salario = (salario_base *9 / 100)
+elif salario_base <= 3856:
+    salario = (salario_base * 12 / 100)
+else:
+    if salario_base <= 7507:
+        salario = (salario_base * 14 * 100)
+print("O valor do INSS é de: ",salario)
+if salario_base <= 1903:
+    IR = 0
+elif salario_base <= 2826:
+    IR = (salario_base * 7.5 / 100)
+elif salario_base <= 3751:
+    IR = (salario_base * 15 / 100)
+elif salario_base <= 4664:
+    IR = (salario_base * 22.5 / 100)
+else:
+    IR = (salario_base * 27.5 / 100)
+print("O valor do imposto de renda é de: ", IR)
+print("Fim do programa")
