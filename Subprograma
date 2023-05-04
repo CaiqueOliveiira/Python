@@ -1,0 +1,22 @@
+def calcular_media(disciplina):
+    print("Cálculo da média da disciplina de: ",disciplina)
+    nt_pr_dis = float(input("Digite a nota da prova dissertativa: "))
+    nt_provao = float(input("Digite a nota do provão: "))
+    nt_exerc = float(input("Digite a média dos exercícios: "))
+    media = (nt_exerc * 2 + nt_pr_dis * 3 + nt_provao * 5 ) / 10
+    print("A média é: ", media)
+    if media >=6:
+        print("Parabéns, você foi aprovado!!!")
+    else:
+        print("Você precisará fazer a prova de recuperação!")
+
+print("Início do Programa - Principal")
+calcular_media("Disciplina 1")
+print("----------------------------------------")
+calcular_media("Disciplina 2")
+print("----------------------------------------")
+calcular_media("Disciplina 3")
+print("----------------------------------------")
+calcular_media("Disciplina 4")
+print("----------------------------------------")
+print("Fim do Programa")
